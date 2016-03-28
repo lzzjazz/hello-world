@@ -2,128 +2,212 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task_1</title>
+    <title>Task_2</title>
+    <style type="text/css">
+    	/*all*/
+    	body{margin: 0; color: #000; background-color: #eee; font-family: "microsoft yahei"; font-size: 62.5%;}
+        img{max-width: 100%;}
+        .form-submit{cursor: pointer}
+        header{background: #333; height: 40px; padding: 10px 0}
+        footer{background: #000; color: #fff; text-align: center; line-height: 6em}
+        nav, .content{width: 80%; margin: 0 auto}
+
+        /*导航*/
+		nav{position: relative;}
+		nav img{width: 200px}
+        nav ul{margin:0; padding:0; position: absolute; list-style-position:inside; right: 0; top: 30%; font-size: 12px}
+        nav a{color: #fff; text-decoration: none}
+		nav a:visited{color: #777}
+		nav li{float: left; margin-left: 10px}
+
+		/*文章*/
+		article{padding: 20px; margin-top: 20px; background-color: #fff; box-shadow: 2px 2px 2px #aaa;}
+		article h2{font-size:2em}
+		article h3{font-size:1.5em; color:#777}
+		article h4{font-size:1.2em; color:#777}
+		.para p{text-indent:2em; font-size:1.5em}
+		article ul{font-size:1.5em; list-style-type:none}
+
+		/*图片*/
+		article .gallery{width: 120px; border: 1px #ccc solid; box-sizing: border-box; padding: 0 10px 10px 10px; margin:0 0 20px 40px;}
+		article .gallery p{font-size:1em;}
+
+		/*表格*/
+		article ol{font-size: 1.5em;font-weight:bold;}
+		.table p{font-size:1.5em;}
+		table{border: 0; width: 100%; border-collapse: collapse}
+		td, th{padding: 5px; border: 1px #ccc solid; }
+		th{background: #333; color: #fff; text-align: left}
+		tr:last-child{background: #ccc; font-weight: bold}
+
+		/*侧边栏*/
+		aside{box-sizing:border-box; padding: 20px; margin-top: 20px; background-color: #fff; box-shadow: 2px 2px 2px #aaa; margin-bottom: 20px;}
+		aside h1{border-left: 3px #ccc solid; line-height: 2em; padding-left: 10px; margin: 0;}
+		aside input, aside textarea{border: 1px #999 solid; outline: none; }
+		aside input{padding: 3px}
+		aside form > div{margin: 10px 0}
+		aside .text{width: 30%; display: inline-block; vertical-align: top; text-align: right; margin-right: 10px;}
+		aside .tips{margin-left: 30%; padding-left: 10px;}
+		aside textarea{height: 50px; width: 400px; }
+		aside .form-submit{background: rgb(28, 99, 221); line-height: 3em; border-radius: 5px; border: 0; outline: none; color: #fff; width: 100%;}
+	</style>
 </head>
 <body>
-<h1>我是一个图书网站</h1>
-<ul>
-    <li><a href="http://www.amazon.cn/%E6%96%87%E5%AD%A6%E5%9B%BE%E4%B9%A6/b/ref=br_mpk_pck-1_hdg?ie=UTF8&node=658394051&pf_rd_m=A1AJ19PSB66TGU&pf_rd_s=merchandised-search-11&pf_rd_r=0H9Q03G07QTPGNXQ3WT9&pf_rd_t=101&pf_rd_p=277298552&pf_rd_i=658390051">文学</a></li>
-    <li><a href="http://www.amazon.cn/%E5%B0%8F%E8%AF%B4/b/ref=br_mpk_pck-2_hdg?ie=UTF8&node=658393051&pf_rd_m=A1AJ19PSB66TGU&pf_rd_s=merchandised-search-11&pf_rd_r=0H9Q03G07QTPGNXQ3WT9&pf_rd_t=101&pf_rd_p=277298552&pf_rd_i=658390051">小说</a></li>
-    <li><a href="http://www.amazon.cn/%E7%A7%91%E6%8A%80%E5%9B%BE%E4%B9%A6/b/ref=br_mpk_pck-8_hdg?ie=UTF8&node=658431051&pf_rd_m=A1AJ19PSB66TGU&pf_rd_s=merchandised-search-11&pf_rd_r=0H9Q03G07QTPGNXQ3WT9&pf_rd_t=101&pf_rd_p=277298552&pf_rd_i=658390051">科技</a></li>
-    <li><a href="http://www.amazon.cn/%E5%AD%A6%E4%B9%A0%E4%B8%8E%E8%BE%85%E5%AF%BC%E5%9B%BE%E4%B9%A6/b/ref=br_mpk_pck-6_hdg?ie=UTF8&node=658413051&pf_rd_m=A1AJ19PSB66TGU&pf_rd_s=merchandised-search-11&pf_rd_r=0H9Q03G07QTPGNXQ3WT9&pf_rd_t=101&pf_rd_p=277298552&pf_rd_i=658390051">教辅</a></li>
-</ul>
-<h2>了不起的盖茨比</h2>
-<h2>让人潸然泪下的原文选段</h2>
-<p>斯科特·菲茨杰拉德 &nbsp;1925年</p>
-<p>
-    我坐着沉思这老旧的，不为人知的世界。我想着当盖茨比第一次看到黛西家码头的那盏绿色的灯，他心里有怎样的幻想。<br>
-    他已经走了很长的路，才到达这片蔚蓝的草地，他的梦想看起来离得那样近，他不会抓不住的。<br>
-    但他不知道，他的<a href="http://baike.baidu.com/link?url=ldN2kJn6YgVkU8GeuSvRoTC8BkleuVWH7JzTvDphLdIm5CSHc9yTuEdsn1-wiN_8bfy6kzI0UdXZAzcUPZOazJyup44UC6aqjoreKoK-mFa">梦想</a>已经被他甩在了身后，在<b>城市之外</b>晦涩朦胧的某处，在夜色下共和国的黑土地上。
-</p>
-<p><img src="http://img.funshion.com/pictures/222/468/7/2224687.jpg" /></p>
-<p>
-    盖茨比相信那盏绿色的灯，那狂欢的未来，在我们之前的许多年。<br>
-    然而它又<a href="http://baike.baidu.com/link?url=R9UCehdg2D4V2U-lthLVebV3djizguNr34M6jG7ZdXoXZ8HoHLhZkVQri0o5vtwvFFPbZxAlPVy_PNjcNHgkLW_gSgOHjQW0K010rEGrOu7">渐行渐远</a>，但是没关系，明日我们会跑得更快，我们的手会伸得更远……<br>
-    直到某个<b>“美好的早上”</b>到来。于是我们艰难前行，像小船逆流而上，不断地被推回过去。
-</p>
-<h2>流动的盛宴</h2>
-<h2>海明威的巴黎生活</h2>
-<p>欧内斯特·海明威 &nbsp;1964年</p>
-<p>
-    城里有那么多树木，你每天都能看到春天在来临，直到一夜暖风突然在一个早晨把它带来了。有时一阵阵寒冷的大雨又会把它打回去，这样一来似乎它再也不会来了，而你的生活中将失去一个季节。<br>
-    在<a href="http://baike.baidu.com/link?url=ipkaBXmWhib9rqPWy5fZsSUF_u_4PmmucittnFKLYK3KAbIQ42BSUxeiU_YCtWpEXpyILrHbagPpzqGCJhKcOqfJxddbaTr26tuULPZk_CS">巴黎</a>这是唯一真正叫人悲哀的时刻，因为这是<b>违反自然</b>的。在秋天感到悲哀是你意料之中的。每年叶子从树上掉落，光秃的树枝迎着寒风和凌冽的冬天的阳光，这是你身子的一部分就死去了。<br>
-    但是你知道春天总会来到，正如你知道河水冰结了又会流淌一样。当冷雨不停地下，扼杀了春天的时候，这就仿佛一个年轻人最后毫无道理地夭折了。<br>
-    然而，在那些日子里，春天最后总是来临，但是使人惊心的是它差一点来不了。
-    <p><img src="http://club.zgkw.cn/Files/fckfile/3%2820%29.jpg" /></p>
-    <ul>
-        <li>“迷惘的一代”</li>
-        <li>莎士比亚图书公司</li>
-        <li>塞纳河畔的人们</li>
-    </ul>
-<h2>插图</h2>
-<blockquote>
-    <p>
-        卢浮宫<br><img src="http://shanxi.sinaimg.cn/2012/1219/U9250P1196DT20121219122236.jpg" />
-    </p>
-    <p>
-        埃菲尔铁塔<br><img src="http://img.jrjimg.cn/2015/11/20151104080803819.jpg" />
-    </p>
-    <p>
-        凡尔赛宫<br><img src="http://img3.3lian.com/2006/010/20/142.jpg" />
-    </p>
-    <p>
-        巴黎圣母院<br><img src="http://img.555.cn/data/scenic/20130117/055305mg_03mpxtj1358416385403201.jpg" />
-    </p>
-    <p>
-        先贤祠<br><img src="http://www.yododo.com/files/photo/2010-08-21/012A9285D3FE1075FF8080812A9118F8.jpg" />
-    </p>
-</blockquote>
-<h2>百年孤独</h2>
-<h2>再现拉丁美洲历史社会图景的鸿篇巨著</h2>
-<p>加西亚·马尔克斯 &nbsp;1967年</p>
-<ol>
-    <li>何塞·阿尔卡蒂奥</li>
-    <li>奥雷里亚诺</li>
-    <li>阿玛兰妲</li>
-</ol>
-<p>亚马逊图书销售排行榜
-<table border="1">
-    <tr>
-        <th>图书名</th>
-        <th>作者</th>
-        <th>购买</th>
-    </tr>
-    <tr>
-        <td>《猫》</td>
-        <td>村上春树</td>
-        <td><a href="http://www.amazon.cn/dp/B00DUNZQO4">放入购物车</a></td>
-    </tr>
-    <tr>
-        <td>《一个人的朝圣》</td>
-        <td>蕾秋•乔伊斯</td>
-        <td><a href="http://www.amazon.cn/dp/B00EC7DOT6">放入购物车</a></td>
-    </tr>
-    <tr>
-        <td>《岛上书店》</td>
-        <td>加布瑞埃拉•泽文</td>
-        <td><a href="http://www.amazon.cn/dp/B00VWVAFAG">放入购物车</a></td>
-    </tr>
-    <tr>
-        <td>《了不起的盖茨比》</td>
-        <td>斯科特·菲茨杰拉德</td>
-        <td><a href="http://www.amazon.cn/dp/B00EK865WK">放入购物车</a></td>
-    </tr>
-    <tr>
-        <td>总价</td>
-        <td colspan="2">79.80</td>
-    </tr>
-</table>
-</p>
-<h2>还未注册？立即注册享受我们优惠的服务！</h2>
-<h2>填写资料</h2>
-<form>
-    <p>请输入邮箱地址：<input type="email" placeholder="请输入您的邮箱" /></p>
-    <p>邮箱地址请按要求格式输入</p>
-    <p>请输入密码：<input type="password" placeholder="密码为6-16位英文数字" /> 请重复输入密码：<input type="password" placeholder="请与之前输入的密码一致" /></p>
-    <p>密码为6-16位英文数字</p>
-    <p>
-        性别：<input type="radio" name="sex" checked="checked" value="1" />男
-        <input type="radio" name="sex" value="2" />女
-        城市：
-        <select>
-            <option>北京</option>
-            <option>上海</option>
-            <option>广州</option>
-            <option>深圳</option>
-        </select>
-        爱好书籍：<input type="checkbox" />文学
-        <input type="checkbox" />经济
-        <input type="checkbox" />科技
-        <input type="checkbox" />教育
-        个人介绍：<textarea rows="2">好好学习，天天向上！我是一个好少年！</textarea>
-        <input type="button" value="确认提交" />
-    </p>
-</form>
-<p>版权所有&copy;</p>
+	<header>
+		<nav>
+			<img src="logo.png" class="logo" alt="logo">
+			<ul>
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#">导航链接四</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<article class="para">
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<p>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个，换行了<br>
+	            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长，换行了<br> 这是一个很长很长的段落。这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+	        </p>
+	        <img src="dog.jpg" alt="picture">
+	        <p>
+	        	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个，换行了<br>
+	            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长，换行了<br> 这是一个很长很长的段落。这是一个很长很长的段落，这以一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+        	</p>
+		</article>
+		<article class="para">
+			<h2>另一个文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<p>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个，换行了<br>
+	            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长，换行了<br> 这是一个很长很长的段落。这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+	        </p>
+	        <img src="dog.jpg" alt="picture">
+	        <ul>
+	        	<li>列表项目一</li>
+	        	<li>列表项目二</li>
+	        	<li>列表项目三</li>
+	        </ul>
+		</article>
+		<article class="para">
+			<h2>图片</h2>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+		</article>
+		<article class="table">
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p class="normal">下面是一个表格，给表格加了一个border="1"，好让你看出这是一个表格。你们写html的时候可以不用加。</p>
+			<table border="1">
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td class="tfooter">总计</th>
+					<td class="tfooter" colspan="2">1000</th>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1>这里以后是个侧栏，这是侧栏的标题</h1>
+			<form>
+				<p><span class="text">请输入邮箱地址</span><input type="email" name="email" placeholder="这是一个文本输入框"></P>
+				<p><span class="tips">邮箱地址请按格式输入</span></P>
+				<p><span class="text">请输入密码</span><input type="password" name="password" placeholder="********"></P>
+				<p><span class="text">请重复输入密码</span><input type="password" name="password" placeholder="********"></p>
+				<p><span class="tips">密码请为6-16位英文或数字</span></p>
+				<p><span class="text">性别</span><input type="radio" name="sex" checked="checked" value="1">男
+					<input type="radio" name="sex" value="2">女
+				<p><span class="text">城市</span>
+					<select>
+			            <option value="beijing" selected>北京</option>
+			            <option value="shanghai">上海</option>
+			            <option value="guangzhou">广州</option>
+			            <option value="shenzhen">深圳</option>
+        			</select>
+				</p>
+				<p><span class="text">爱好</span>
+					<label><input type="checkbox" name="hobby" value="sports"> 运动</label>&nbsp;&nbsp;
+					<label><input type="checkbox" name="hobby" value="art"> 艺术</label>&nbsp;&nbsp;
+					<label><input type="checkbox" name="hobby" value="science"> 科学</label><br>
+				</p>
+				<p><span class="text">个人描述</span>
+                	<textarea class="form-text" name="self-description" cols="70" rows="5" placeholder="这是一个输入框，输入您的个人描述"></textarea>
+				</p>
+                <input class="form-submit" type="submit" value="确认提交">
+			</form>
+		</aside>
+	</div>
+	<footer class="footer">版权所有&copy;</footer>
 </body>
-</html>
