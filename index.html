@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_2</title>
+    <style type="text/css">
+    	/*all*/
+    	body{margin: 0; color: #000; background-color: #eee; font-family: "microsoft yahei"; font-size: 62.5%;}
+        img{max-width: 100%;}
+        .form-submit{cursor: pointer}
+        header{background: #333; height: 40px; padding: 10px 0}
+        footer{background: #000; color: #fff; text-align: center; line-height: 6em}
+        nav, .content{width: 80%; margin: 0 auto}
+
+        /*导航*/
+		nav{position: relative;}
+		nav img{width: 200px}
+        nav ul{margin:0; padding:0; position: absolute; list-style-position:inside; right: 0; top: 30%; font-size: 12px}
+        nav a{color: #fff; text-decoration: none}
+		nav a:visited{color: #777}
+		nav li{float: left; margin-left: 10px}
+
+		/*文章*/
+		article{padding: 20px; margin-top: 20px; background-color: #fff; box-shadow: 2px 2px 2px #aaa;}
+		article h2{font-size:2em}
+		article h3{font-size:1.5em; color:#777}
+		article h4{font-size:1.2em; color:#777}
+		.para p{text-indent:2em; font-size:1.5em}
+		article ul{font-size:1.5em; list-style-type:none}
+
+		/*图片*/
+		article .gallery{width: 120px; border: 1px #ccc solid; box-sizing: border-box; padding: 0 10px 10px 10px; margin:0 0 20px 40px;}
+		article .gallery p{font-size:1em;}
+
+		/*表格*/
+		article ol{font-size: 1.5em;font-weight:bold;}
+		.table p{font-size:1.5em;}
+		table{border: 0; width: 100%; border-collapse: collapse}
+		td, th{padding: 5px; border: 1px #ccc solid; }
+		th{background: #333; color: #fff; text-align: left}
+		tr:last-child{background: #ccc; font-weight: bold}
+
+		/*侧边栏*/
+		aside{box-sizing:border-box; padding: 20px; margin-top: 20px; background-color: #fff; box-shadow: 2px 2px 2px #aaa; margin-bottom: 20px;}
+		aside h1{border-left: 3px #ccc solid; line-height: 2em; padding-left: 10px; margin: 0;}
+		aside input, aside textarea{border: 1px #999 solid; outline: none; }
+		aside input{padding: 3px}
+		aside form > div{margin: 10px 0}
+		aside .text{width: 30%; display: inline-block; vertical-align: top; text-align: right; margin-right: 10px;}
+		aside .tips{margin-left: 30%; padding-left: 10px;}
+		aside textarea{height: 50px; width: 400px; }
+		aside .form-submit{background: rgb(28, 99, 221); line-height: 3em; border-radius: 5px; border: 0; outline: none; color: #fff; width: 100%;}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="logo.png" class="logo" alt="logo">
+			<ul>
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#">导航链接四</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<article class="para">
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<p>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个，换行了<br>
+	            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长，换行了<br> 这是一个很长很长的段落。这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+	        </p>
+	        <img src="dog.jpg" alt="picture">
+	        <p>
+	        	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个，换行了<br>
+	            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长，换行了<br> 这是一个很长很长的段落。这是一个很长很长的段落，这以一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+        	</p>
+		</article>
+		<article class="para">
+			<h2>另一个文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<p>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个，换行了<br>
+	            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长，换行了<br> 这是一个很长很长的段落。这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+	        </p>
+	        <img src="dog.jpg" alt="picture">
+	        <ul>
+	        	<li>列表项目一</li>
+	        	<li>列表项目二</li>
+	        	<li>列表项目三</li>
+	        </ul>
+		</article>
+		<article class="para">
+			<h2>图片</h2>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+			<div class="gallery">
+				<p>好看的图片</P>
+				<img src="dog.jpg" alt="picture">
+			</div>
+		</article>
+		<article class="table">
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p class="normal">下面是一个表格，给表格加了一个border="1"，好让你看出这是一个表格。你们写html的时候可以不用加。</p>
+			<table border="1">
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td>表内容单元格</th>
+					<td>表内容单元格</th>
+					<td><a href="">操作</a></th>
+				</tr>
+				<tr>
+					<td class="tfooter">总计</th>
+					<td class="tfooter" colspan="2">1000</th>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1>这里以后是个侧栏，这是侧栏的标题</h1>
+			<form>
+				<p><span class="text">请输入邮箱地址</span><input type="email" name="email" placeholder="这是一个文本输入框"></P>
+				<p><span class="tips">邮箱地址请按格式输入</span></P>
+				<p><span class="text">请输入密码</span><input type="password" name="password" placeholder="********"></P>
+				<p><span class="text">请重复输入密码</span><input type="password" name="password" placeholder="********"></p>
+				<p><span class="tips">密码请为6-16位英文或数字</span></p>
+				<p><span class="text">性别</span><input type="radio" name="sex" checked="checked" value="1">男
+					<input type="radio" name="sex" value="2">女
+				<p><span class="text">城市</span>
+					<select>
+			            <option value="beijing" selected>北京</option>
+			            <option value="shanghai">上海</option>
+			            <option value="guangzhou">广州</option>
+			            <option value="shenzhen">深圳</option>
+        			</select>
+				</p>
+				<p><span class="text">爱好</span>
+					<label><input type="checkbox" name="hobby" value="sports"> 运动</label>&nbsp;&nbsp;
+					<label><input type="checkbox" name="hobby" value="art"> 艺术</label>&nbsp;&nbsp;
+					<label><input type="checkbox" name="hobby" value="science"> 科学</label><br>
+				</p>
+				<p><span class="text">个人描述</span>
+                	<textarea class="form-text" name="self-description" cols="70" rows="5" placeholder="这是一个输入框，输入您的个人描述"></textarea>
+				</p>
+                <input class="form-submit" type="submit" value="确认提交">
+			</form>
+		</aside>
+	</div>
+	<footer class="footer">版权所有&copy;</footer>
+</body>
